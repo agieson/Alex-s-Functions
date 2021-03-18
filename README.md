@@ -32,4 +32,16 @@ A use case for code like this would be storing files into an SQL database. Avoid
 might be an attractive solution that could avoid a headache. Instead, consider using these functions to store the binary
 of the files, which can then be converted back when the contents of the zip file are needed. 
 
+## memcheck.py
+
+This file contains a function that will check for memory leaks in a C program so long as there is a makefile. The only
+inputs this function takes are the path to the project folder (where the makefile is located) and the path of the test case
+that should be used to check for memory leaks. Here's an example call for your convenience:
+
+```
+bytes, blocks = memcheck(users/alex/desktop/project1, users/alex/desktop/testcases/testcase1.txt)
+```
+
+make sure to start the paths from the root folder of your machine, otherwise this function will not work for you. 
+If you do not need or want to use a test case, then you can also put 0 for the second input of the function call. 
 
