@@ -51,5 +51,5 @@ if __name__ == '__main__':
 
         text = 'FILL IN WHAT YOU WANT YOUR EMAIL TO SAY'
 
-        email.send('itap@purdue.edu', text)  # idk how to put a subject but i think it's fine without one
+        email.send('resnet@purdue.edu', text)  # idk how to put a subject but i think it's fine without one
 
