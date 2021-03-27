@@ -60,3 +60,18 @@ def memcheck(makefile_dir, path_of_testcase):
     os.remove(testfile)
 
     return bytesInUse, blocks
+
+
+# EXAMPLE CODE THAT WORKS ON ALEX'S COMPUTER (macOS Big Sur)
+if __name__ == "__main__":
+    makefile_dir = "/Users/alex/Desktop/hw14"  # the directory of the makefile starting at the root
+    path_of_test_case = "/Users/alex/Desktop/hw14/inputs/input1.txt"  # the path to the test case from root
+
+    bytes, blocks = memcheck(makefile_dir, path_of_test_case)  # opens the file and sends it to the memcheck funciton to get integer values
+
+    if bytes >= 0:
+        print(f'you have {bytes} bytes of memory leak')
+    elif bytes == -1:
+        print('the name of the executable could not be found')
+    elif bytes == -2:
+        print('valgrind did not output to the correct file')
