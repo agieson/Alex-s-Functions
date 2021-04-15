@@ -45,3 +45,17 @@ bytes, blocks = memcheck(users/alex/desktop/project1, users/alex/desktop/testcas
 make sure to start the paths from the root folder of your machine, otherwise this function will not work for you. 
 If you do not need or want to use a test case, then you can also put 0 for the second input of the function call. 
 
+##LabDocuments
+
+This folder contains lab work I have completed this semester, which includes constructing circuits on a breadboard, 
+sketching circuit diagrams, and working with oscilloscopes, network analyzers, and waveform generators. The reports
+contain analysis of operational amplifiers, switching circuits, and open and closed loop systems. A list of the lab 
+documents and their contents is as follows: 
+
+    Lab6: construction of an operational amplifier
+    
+    Lab7: characterization of the op amp built in lab 6
+    
+    Lab10: analysis of switching circuits
+    
+    Lab11: control loops
